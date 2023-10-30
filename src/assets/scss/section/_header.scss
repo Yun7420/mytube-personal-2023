@@ -1,6 +1,5 @@
-.header_logo {
-    border-bottom: 1px solid var(--black200);
-
+.header__logo {
+    border-bottom: 1px solid var(--black100);
     a {
         display: flex;
         padding: 10px;
@@ -24,22 +23,24 @@
     }
 }
 
-.header_menu {
+.header__menu {
     padding: 10px 0;
-
     .menu {
+        border-bottom: 1px solid var(--black100);
+
         li {
             margin-bottom: 5px;
 
             a {
                 font-size: 1rem;
                 display: block;
-                padding: 0.9rem 2rem 0.9rem 50px;
+                padding: 0.9rem 2rem 0.9rem 3.125rem;
                 margin: 0 0.625rem;
                 border-radius: 40px;
                 position: relative;
                 line-height: 1;
-                color: var(--white100)
+                color: var(--white200);
+                transition: all 0.3s;
 
                 svg {
                     width: 1.25rem;
@@ -50,19 +51,66 @@
                 }
 
                 &:hover {
-                    background-color: var(--black200);
+                    background-color: var(--black100);
+                    color: var(--white);
                 }
+            }
+
+            &.active a {
+                background-color: var(--black100);
+                color: var(--white);
             }
         }
     }
 
     .keyword {
+        padding: 1.25rem;
 
+        li {
+            display: inline-block;
+
+            a {
+                display: inline-block;
+                padding: 7px 15px;
+                border: 1px solid var(--black200);
+                font-size: 0.8rem;
+                border-radius: 40px;
+                margin: 4px 1px;
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: var(--black100);
+                    color: var(--white);
+                }
+            }
+
+            &.active a{
+                background-color: var(--black100);
+                color: var(--white);
+            }
+        }
     }
 }
 
-.header_sns {
+.header__sns {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 260px;
+    text-align: center;
+    padding: 15px 0 10px;
+    background-color: var(--blackAlpha100);
+    backdrop-filter: blur(10px);
 
+    li{
+        display: inline-block;
+
+        a {
+            padding: 5px 7px;
+            display: inline-block;
+        }
+    }
 }
 
 @keyframes ani {
