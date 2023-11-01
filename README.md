@@ -24,5 +24,4 @@ YouTube Data API를 활용하여 외부 데이터를 가져오는 방법을 익�
 - react-player를 설치합니다. `npm install react-player`
 - sass를 설치합니다. `npm install sass`
 - react-helmet-async를 설치합니다. `npm install react-helmet-async`
-- swiper를 설치합니다. `npm install swiper`"# youtube-clone-project" 
-"# youtube-clone-project02" 
+- swiper를 설치합니다. `npm install swiper`
