@@ -1,8 +1,9 @@
 import React from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Header from "./Header";
 import Footer from "./Footer";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import Search from "./Search";
 
 const Main = (props) => {
   return (
@@ -14,6 +15,7 @@ const Main = (props) => {
 
       <Header></Header>
       <main id="main" role="main">
+        <Search></Search>
         {props.children}
       </main>
       <Footer></Footer>
